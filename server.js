@@ -5,7 +5,7 @@ import { makeExecutableSchema } from 'graphql-tools';
 import mongoose from 'mongoose';
 import cors from 'cors';
 
-import typeDefs from './schema';
+import typeDefs from './schema.graphql';
 import resolvers from './resolvers';
 
 import config from './config/database.config';
