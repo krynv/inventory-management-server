@@ -25,7 +25,7 @@ const schema = makeExecutableSchema({
     resolvers,
 });
 
-const PORT = 1337;
+const PORT = process.env.PORT || 1337;
 
 const app = express();
 app.use(cors()); // enable cors
