@@ -1,12 +1,12 @@
-type Cat {
+type Item {
     _id: String!
     name: String!
 }
 
 type Query {
-    allCats: [Cat!]!
+    allItems: [Item!]!
 }
 
 type Mutation {
-    createCat(name: String!): Cat!
+    createItem(name: String!): Item!
 }

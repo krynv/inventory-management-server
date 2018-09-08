@@ -9,7 +9,7 @@ import typeDefs from './schema.graphql';
 import resolvers from './resolvers';
 
 import config from './config/database.config';
-import Cat from './models/Cat';
+import Item from './models/Item';
 
 mongoose.Promise = global.Promise;
 mongoose.connect(config.uri, { useNewUrlParser: true }, (err) => {
@@ -34,7 +34,7 @@ app.use(bodyParser.json());
 app.use('/graphql', graphqlExpress({
     schema,
     context: {
-        Cat
+        Item
     }
 }));
 

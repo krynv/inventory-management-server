@@ -1,10 +1,10 @@
 export default {
     Query: {
-        allCats: async (parent, args, { Cat }) => {
+        allItems: async (parent, args, { Item }) => {
             // { _id: 123123, name: "whatever"}
-            const cats = await Cat.find();
+            const items = await Item.find();
 
-            return cats.map((x) => {
+            return items.map((x) => {
                 x._id = x._id.toString();
 
                 return x;
@@ -12,13 +12,13 @@ export default {
         },
     },
     Mutation: {
-        createCat: async (parent, args, { Cat }) => {
+        createItem: async (parent, args, { Item }) => {
             // { _id: 123123, name: "whatever"}
-            const kitty = await new Cat(args).save();
+            const item = await new Item(args).save();
 
-            kitty._id = kitty._id.toString();
+            item._id = item._id.toString();
 
-            return kitty;
+            return item;
         },
     },
 };
