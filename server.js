@@ -12,7 +12,7 @@ import config from './config/database.config';
 import Cat from './models/Cat';
 
 mongoose.Promise = global.Promise;
-mongoose.connect(config.uri, (err) => {
+mongoose.connect(config.uri, { useNewUrlParser: true }, (err) => {
     if (err) {
         console.error(err);
     } else {
