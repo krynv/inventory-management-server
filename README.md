@@ -2,7 +2,7 @@
 
 Built with Express and GraphQL.
 
-macOS/ Linux:
+## For macOS/ Linux installation:
 
 Install dependencies:
 
@@ -27,7 +27,9 @@ Access GraphiQL at:
 http://localhost:1337/graphiql
 
 
-Windows:
+
+
+## For Windows installation:
 
 Install dependencies:
 
