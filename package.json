@@ -24,7 +24,7 @@
         "babel-preset-latest": "^6.24.1",
         "babel-preset-stage-2": "^6.24.1",
         "eslint": "^5.16.0",
-        "eslint-config-airbnb-base": "^13.2.0",
+        "eslint-config-airbnb-base": "^14.0.0",
         "eslint-plugin-import": "^2.18.2",
         "nodemon": "^1.19.1"
     }
