@@ -1,31 +1,38 @@
 {
-    "name": "inventory-management-server",
-    "version": "1.0.0",
-    "description": "",
-    "main": "server.js",
-    "scripts": {
-        "start": "nodemon --exec babel-node server.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "krynv <github.com/krynv>",
-    "license": "MIT",
-    "dependencies": {
-        "apollo-server-express": "^2.11.0",
-        "body-parser": "^1.19.0",
-        "cors": "^2.8.5",
-        "express": "^4.17.1",
-        "graphql": "^14.6.0",
-        "graphql-tools": "^4.0.7",
-        "mongoose": "^5.9.4"
-    },
-    "devDependencies": {
-        "babel-cli": "^6.26.0",
-        "babel-plugin-import-graphql": "^2.7.0",
-        "babel-preset-latest": "^6.24.1",
-        "babel-preset-stage-2": "^6.24.1",
-        "eslint": "^6.8.0",
-        "eslint-config-airbnb-base": "^14.0.0",
-        "eslint-plugin-import": "^2.20.1",
-        "nodemon": "^2.0.2"
-    }
+  "name": "inventory-management-server",
+  "private": true,
+  "version": "0.1.0",
+  "description": "An inventory management server handled by Strapi",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "knex": "<0.20.0",
+    "pg": "latest",
+    "strapi": "3.0.0-beta.19.3",
+    "strapi-admin": "3.0.0-beta.19.3",
+    "strapi-connector-bookshelf": "3.0.0-beta.19.3",
+    "strapi-plugin-content-manager": "3.0.0-beta.19.3",
+    "strapi-plugin-content-type-builder": "3.0.0-beta.19.3",
+    "strapi-plugin-email": "3.0.0-beta.19.3",
+    "strapi-plugin-graphql": "^3.0.0-beta.19.3",
+    "strapi-plugin-upload": "3.0.0-beta.19.3",
+    "strapi-plugin-users-permissions": "3.0.0-beta.19.3",
+    "strapi-utils": "3.0.0-beta.19.3"
+  },
+  "author": {
+    "name": "krynv"
+  },
+  "strapi": {
+    "uuid": "bb7bfca1-8f62-413d-b8cc-0cfdccae65fa"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
 }

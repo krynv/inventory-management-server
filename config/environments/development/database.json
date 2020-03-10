@@ -1,0 +1,17 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "bookshelf",
+      "settings": {
+        "client": "postgres",
+        "database": "inventory-management-server",
+        "host": "127.0.0.1",
+        "port": 5432,
+        "username": "vkrynytskyy",
+        "password": "password"
+      },
+      "options": {}
+    }
+  }
+}
