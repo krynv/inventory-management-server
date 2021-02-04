@@ -21,7 +21,7 @@
     "strapi-plugin-email": "3.0.0-beta.19.3",
     "strapi-plugin-graphql": "^3.0.0-beta.19.3",
     "strapi-plugin-upload": "3.0.0-beta.19.3",
-    "strapi-plugin-users-permissions": "3.0.0-beta.19.3",
+    "strapi-plugin-users-permissions": "3.4.6",
     "strapi-utils": "3.0.0-beta.19.3"
   },
   "author": {
